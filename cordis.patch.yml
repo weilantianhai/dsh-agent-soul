@@ -1,0 +1,10 @@
+# dsh-agent-soul —— 记忆与日记插件
+#
+# ⚠️ 这个文件必须是**纯 insert**，不能带 config。
+#   DSH 热挂载只接受纯 insert；带 config 会被拒绝（"含配置行/表达式"）。
+#   要配，写到 profile 的 cordis.patch.yml 里同名 id 的覆盖块（见 README「怎么配」）。
+#
+# ⚠️ name 必须是安装后的**真实包名**。写错 = Cannot find package，插件起不来。
+- insert:
+    - id: dsh-agent-soul
+      name: dsh-agent-soul

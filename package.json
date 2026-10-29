@@ -1,0 +1,59 @@
+{
+  "name": "dsh-agent-soul",
+  "version": "0.1.0",
+  "description": "给 DSH 的 agent 一套可查的记忆与一个立得住的人格：日志、日记、系统提示注入、五个记忆工具，晚上还会叫醒 Ta 做一次记忆归档。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "prompts",
+    "docs",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "!src/*/test",
+    "!src/*/test/**"
+  ],
+  "scripts": {
+    "test": "node test/config.mjs && node test/smoke.mjs && node test/sections.mjs && node test/registry.mjs && node test/host-contract.mjs && node test/ui-render.mjs && node test/privacy.mjs && node test/summary.mjs && node test/client.mjs && node tools/verify-summary.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "diary",
+    "persona",
+    "agent"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weilantianhai/dsh-agent-soul.git"
+  },
+  "bugs": {
+    "url": "https://github.com/weilantianhai/dsh-agent-soul/issues"
+  },
+  "homepage": "https://github.com/weilantianhai/dsh-agent-soul#readme"
+}

@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+  "budget": {
+    "total": 2500,
+    "persona": 1500,
+    "diary": 800,
+    "signpost": 200
+  },
+  "sections": {
+    "manual": true,
+    "persona": true,
+    "diarySummary": true,
+    "signpost": true,
+    "board": true
+  },
+  "persona": {
+    "includeFirstSection": true,
+    "repeat": "first-turn"
+  },
+  "tools": {
+    "enabled": true,
+    "find": true,
+    "open": true,
+    "diary": true,
+    "recall": true,
+    "index": true
+  },
+  "fallbackAgent": null
+}

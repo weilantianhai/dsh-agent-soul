@@ -1,0 +1,18 @@
+{
+  "name": "dsh-memory-inject",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 记忆系统 · Inject 模块：每轮开场把人格摘要、最近一篇日记的总结、一句路标塞进系统提示",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {}
+}
